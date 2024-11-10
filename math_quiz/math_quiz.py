@@ -2,6 +2,7 @@ import random
 
 def generate_random_integer(min_value, max_value):
     """
+<<<<<<< HEAD
     Generates a random integer between the specified min and max values.
     Parameters:
     min_value (int): The minimum value of the range.
@@ -63,7 +64,13 @@ def math_quiz():
 
     print("Welcome to the Math Quiz Game!")
     print("You will be presented with math problems, and you need to provide the correct answers.")
-
+    
+    for _ in range(total_questions):
+        # Generate two random numbers and a random operator
+        num1 = generate_random_integer(1, 10)
+        num2 = generate_random_integer(1, 5)
+        operator = generate_random_operator()
+        
     for _ in range(total_questions):
         # Generate random numbers and operator
         num1 = generate_random_integer(1, 10)
